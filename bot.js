@@ -7744,4 +7744,4 @@ client.on("ready", () => {
 
 
    // Token
-client.login(NTM4ODY1NDUzNTk0OTY4MDkw.Dy6B6w.FcdlMpKiZKRHeLV_qnRdrUOLw-4);
+client.login(process.env.BOT_TOKEN);

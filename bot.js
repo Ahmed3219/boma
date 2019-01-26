@@ -11,7 +11,7 @@ const r1 = require('snekfetch');
 const jimp = require('jimp')
 const math = require('math-expression-evaluator'); 
 
-const prefix = "!";
+const prefix = "@";
 
 
 client.on('ready', () => {
@@ -7744,4 +7744,4 @@ client.on("ready", () => {
 
 
    // Token
-client.login(process.env.BOT_TOKEN);
+client.login(NTM4ODY1NDUzNTk0OTY4MDkw.Dy6B6w.FcdlMpKiZKRHeLV_qnRdrUOLw-4);

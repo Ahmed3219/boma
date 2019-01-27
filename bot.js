@@ -24,7 +24,7 @@ client.on('ready', () => {
 
 //=================================== Owner ===================================
 const developers = ['316324088865882142'];
-const admin = "!";
+const admin = "@";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -38,7 +38,7 @@ client.on('message', message => {
       message.channel.send(` ☑ Client Activity Now Is : \`Listening ${argresult} \` `)
   } else 
   if (message.content.startsWith(admin + 'setstream')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/idk");
+    client.user.setGame(argresult, "https://www.twitch.tv/BomaCF");
      message.channel.send(` ☑ Client Activity Now Is : \`Streaming ${argresult} \` `)
   }
   if (message.content.startsWith(admin + 'setname')) {
@@ -72,7 +72,7 @@ client.on("guildMemberAdd", member => {
 
 client.on('ready', function(){//npm i ms 
     var ms = 5000 ;
-    var setGame = [`Soon | !inv`,`Users! [ " ${client.users.size} " ]`,`servers! [ " ${client.guilds.size} " ]`];
+    var setGame = [`Soon | @inv`,`Users! [ " ${client.users.size} " ]`,`servers! [ " ${client.guilds.size} " ]`,`@help [ "${client.guilds.size} "} ] `];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -83,7 +83,7 @@ client.on('ready', function(){//npm i ms
             j = -1;
         }
         i = i+j;
-        client.user.setGame(setGame[i],`http://www.twitch.tv/v5bz`);
+        client.user.setGame(setGame[i],`http://www.twitch.tv/boma`);
     }, ms);
 
 });
@@ -135,7 +135,7 @@ client.on('message', message => {
         if (message.content === prefix + "inv") {
             if(!message.channel.guild) return;
         let embed = new Discord.RichEmbed()
-        .setTitle(`:small_orange_diamond: Click Here To Invite Fantastic. `)
+        .setTitle(`:small_orange_diamond: Click Here To Invite BoMa CF BoT. `)
         .setURL(`https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8`)
      message.channel.sendEmbed(embed);
        }

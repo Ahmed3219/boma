@@ -72,7 +72,7 @@ client.on("guildMemberAdd", member => {
 
 client.on('ready', function(){//npm i ms 
     var ms = 5000 ;
-    var setGame = [`Soon | @inv`,`Users! [ " ${client.users.size} " ]`,`servers! [ " ${client.guilds.size} " ]`,`@help [ "${client.guilds.size} "} ] `];
+    var setGame = [`Soon | @inv`,`@help [ " ${client.users.size} " ]`,`by bomacf [ " ${client.guilds.size} " ]`];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -83,7 +83,7 @@ client.on('ready', function(){//npm i ms
             j = -1;
         }
         i = i+j;
-        client.user.setGame(setGame[i],`http://www.twitch.tv/boma`);
+        client.user.setGame(setGame[i],`http://www.twitch.tv/bomacf`);
     }, ms);
 
 });
